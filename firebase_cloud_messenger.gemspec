@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "googleauth",  "~> 0.6"
-  spec.add_runtime_dependency "json-schema", "~> 2.8"
+  spec.add_runtime_dependency "googleauth",  "~> 1.11"
+  spec.add_runtime_dependency "json-schema", "~> 4.3"
 
   spec.add_development_dependency "rake"
   spec.add_development_dependency "minitest"
