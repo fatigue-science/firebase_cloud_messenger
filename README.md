@@ -53,6 +53,11 @@ Also set the `project_id`, which is otherwise read from the json service account
 FirebaseCloudMessenger.project_id = "1234567"
 ```
 
+#### Setup Method 4: Create initializer where new clients get initialized
+```
+config.firebase_client = FirebaseCloudMessenger::Client.new("service.json", "1234567")
+```
+
 ## Usage
 
 ### Sending a Message

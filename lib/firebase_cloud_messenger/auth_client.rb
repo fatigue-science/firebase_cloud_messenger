@@ -41,7 +41,7 @@ module FirebaseCloudMessenger
       args = { scope: AUTH_SCOPE }
       return args unless credentials_path
 
-      file = Pathname.new(credentials_path)
+      file = File.open(credentials_path)
       args.merge(json_key_io: file)
     end
   end
